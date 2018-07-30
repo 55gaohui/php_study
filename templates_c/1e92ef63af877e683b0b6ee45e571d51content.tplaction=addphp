@@ -49,6 +49,36 @@
                 <tr><td>缩&nbsp;&nbsp;略&nbsp;图：<input type="text" name="thumbnail" class="text" /></td></tr>
                 <tr><td>文章来源：<input type="text" name="source" class="text" /></td></tr>
                 <tr><td>作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<input type="text" name="author" class="text" /></td></tr>
+                <tr><td><span class="middle">内容摘要：</span><textarea name="info"></textarea></td></tr>
+                <tr><td><textarea name="" id="" style="width: 500px">详细内容：这里后面会改成在线编辑器</textarea></td></tr>
+                <tr><td>评论选项：<input type="radio" name="commend" value="1" checked/> 允许评论
+                                   <input type="radio" name="commend" value="0" /> 禁止评论
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浏览次数：<input type="text" name="count" class="text small" value="100" />
+                </td></tr>
+                <tr><td>文档排序：<select name="sort" id="">
+                                        <option value="">默认排序</option>
+                                        <option value="">置顶一天</option>
+                                        <option value="">置顶一周</option>
+                                        <option value="">置顶一月</option>
+                                        <option value="">置顶一年</option>
+                                    </select>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;消费金币：<input type="text" name="gold" class="text small" />
+                 </td></tr>
+                <tr><td>阅读权限：<select name="limit" id="">
+                            <option value="">开放浏览</option>
+                            <option value="">初级会员</option>
+                            <option value="">中级会员</option>
+                            <option value="">高级会员</option>
+                            <option value="">VIP会员</option>
+                        </select>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;标题颜色：<select name="color" id="">
+                            <option value="">默认颜色</option>
+                            <option value="" style="color: red">红色</option>
+                            <option value="" style="color: blue">蓝色</option>
+                            <option value="" style="color: orange">橙色</option>
+                        </select>
+                 </td></tr>
+                <tr><td><input type="submit" value="发布文档" /><input type="reset" value="重置" /></td></tr>
             </table>
         </form>
     <?php } ?>
