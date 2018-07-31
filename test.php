@@ -1,14 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ueditor demo</title>
+</head>
+
+<body>
+<!-- 加载编辑器的容器 -->
 <script id="container" name="content" type="text/plain">
         这里写你的初始化内容
-</script>
+    </script>
+<!-- 配置文件 -->
 <script type="text/javascript" src="ueditor/ueditor.config.js"></script>
-<script type="text/javascript" src="ueditor/_examples/editor_api.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="ueditor/ueditor.all.js"></script>
+<script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
+<!-- 实例化编辑器 -->
 <script type="text/javascript">
-    var editor = UE.getEditor('container');
+    var ue = UE.getEditor('container');
 </script>
-<?php
-    echo @$_POST['content'];
-?>
-<form action="" method="post">
-    <textarea id="container" style="width:630px;height:220px;"></textarea>
-</form>
+</body>
+
+</html>
