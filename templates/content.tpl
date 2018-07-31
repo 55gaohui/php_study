@@ -14,7 +14,7 @@
     <meta http-equiv="Content-Type" content="text/html; chartser=utf-8" >
     <title>main</title>
     <link rel="stylesheet" type="text/css" href="../style/admin.css">
-    <script type="text/javascript" src="../js/admin_level.js"></script>
+    <script type="text/javascript" src="../js/admin_content.js"></script>
     <!-- 配置文件 -->
     <script type="text/javascript" src="../ueditor/ueditor.config.js"></script>
     <!-- 编辑器源码文件 -->
@@ -54,7 +54,7 @@
                 </td></tr>
                 <tr><td>TAG标签：<input type="text" name="tag" class="text" /></td></tr>
                 <tr><td>关&nbsp;&nbsp;键&nbsp;字：<input type="text" name="keyword" class="text" /></td></tr>
-                <tr><td>缩&nbsp;&nbsp;略&nbsp;图：<input type="text" name="thumbnail" class="text" /></td></tr>
+                <tr><td>缩&nbsp;&nbsp;略&nbsp;图：<input type="text" name="thumbnail" class="text" /><input type="button" value="上传缩略图" onclick="centerWindow('../templates/upfile.html','upfile','400','100')"></td></tr>
                 <tr><td>文章来源：<input type="text" name="source" class="text" /></td></tr>
                 <tr><td>作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<input type="text" name="author" class="text" /></td></tr>
                 <tr><td><span class="middle">内容摘要：</span><textarea name="info"></textarea></td></tr>
