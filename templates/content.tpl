@@ -15,6 +15,14 @@
     <title>main</title>
     <link rel="stylesheet" type="text/css" href="../style/admin.css">
     <script type="text/javascript" src="../js/admin_level.js"></script>
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="../ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="../ueditor/ueditor.all.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript">
+        var ue = UE.getEditor('container');
+    </script>
 </head>
 <body id="main">
     <div class="map">
@@ -50,7 +58,9 @@
                 <tr><td>文章来源：<input type="text" name="source" class="text" /></td></tr>
                 <tr><td>作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<input type="text" name="author" class="text" /></td></tr>
                 <tr><td><span class="middle">内容摘要：</span><textarea name="info"></textarea></td></tr>
-                <tr><td><textarea name="" id="" style="width: 500px">详细内容：这里后面会改成在线编辑器</textarea></td></tr>
+                <tr><td>
+                        <script id="container" name="content" type="text/plain"></script>
+                </td></tr>
                 <tr><td>评论选项：<input type="radio" name="commend" value="1" checked/> 允许评论
                                    <input type="radio" name="commend" value="0" /> 禁止评论
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浏览次数：<input type="text" name="count" class="text small" value="100" />

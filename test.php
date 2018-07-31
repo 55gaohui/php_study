@@ -1,10 +1,31 @@
-<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
 <?php
-    echo @$_POST['content'];
+
 ?>
-<form action="" method="post">
-    <textarea id="TextArea1" class="ckeditor" name="content">
-        
-    </textarea>
-    <input type="submit" value="提交" />
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ueditor demo</title>
+</head>
+
+<body>
+<!-- 加载编辑器的容器 -->
+<form action="server.php" method="post">
+    <script id="container" name="content" type="text/plain">
+        这里写你的初始化内容
+    </script>
+    <input type="submit" value="提交">
 </form>
+<!-- 配置文件 -->
+<script type="text/javascript" src="ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="ueditor/ueditor.all.js"></script>
+<script type="text/javascript" charset="utf-8" src="ueditor/lang/zh-cn/zh-cn.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+</script>
+</body>
+
+</html>
