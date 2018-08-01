@@ -10,14 +10,8 @@ header('Content-Type=text/html;charset=utf-8');
 define('ROOT_PATH',__DIR__);
 //引入配置信息
 require ROOT_PATH.'/config/profile.inc.php';
-//引入模板类
-require ROOT_PATH.'/includes/Templates.class.php';
-//引入配置信息
-require ROOT_PATH.'/includes/Parser.class.php';
-//引入数据库
-require ROOT_PATH.'/includes/DB.class.php';
-//引入工具类
-require ROOT_PATH.'/includes/Tool.class.php';
+//设置中国时区
+date_default_timezone_set('Asia/Shanghai');
 //自动加载类
 function __autoload($_className){
     if(substr($_className,-6) == 'Action'){

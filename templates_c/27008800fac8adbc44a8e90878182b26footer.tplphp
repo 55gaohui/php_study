@@ -1,4 +1,4 @@
-<div id="link">
+ <div id="link">
     <h2>友情链接<span><a href="">所有链接</a> | <a href="">申请加入</a></span></h2>
     <ul>
         <li><a href="">网易新闻</a></li>
