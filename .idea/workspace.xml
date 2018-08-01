@@ -5,103 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/templates/content.tpl" line="28" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e6c3626-7a97-4fbb-8e89-60e4a317506d" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/demo2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/127_0_0_1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/127_0_0_1.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/profile.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/profile.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/init.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/content.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/content.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/top.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/top.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/1b0b130b4dbcdf14abdc1801fdb23dedcontent.tplaction=showphp" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/1b0b130b4dbcdf14abdc1801fdb23dedcontent.tplaction=showphp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/1e92ef63af877e683b0b6ee45e571d51content.tplaction=addphp" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/1e92ef63af877e683b0b6ee45e571d51content.tplaction=addphp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/27008800fac8adbc44a8e90878182b26footer.tplphp" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/27008800fac8adbc44a8e90878182b26footer.tplphp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/a76bcc64829a51022b07aba06874e94ftop.tplphp" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/a76bcc64829a51022b07aba06874e94ftop.tplphp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/attachment/attachment.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/attachment/attachment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/charts/chart.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/chart.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/charts/charts.css" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/charts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/charts/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/charts/charts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/map/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/map/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/preview/preview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/table/edittable.css" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/table/edittable.html" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/table/edittable.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/table/edittd.html" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/table/edittip.html" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/table/edittip.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/dialogs/wordimage/tangram.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/dialogs/wordimage/tangram.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/php/action_crawler.php" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/php/action_crawler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/php/action_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/php/action_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/php/action_upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/php/action_upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/php/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/php/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/php/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/php/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/themes/default/css/ueditor.css" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/themes/default/css/ueditor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/themes/default/css/ueditor.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/themes/default/css/ueditor.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/codemirror/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/codemirror/codemirror.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts-more.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts-more.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts-more.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts-more.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/highcharts.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/annotations.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/annotations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/annotations.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/annotations.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/canvas-tools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/data.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/data.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/drilldown.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/drilldown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/drilldown.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/exporting.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/exporting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/exporting.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/exporting.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/funnel.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/funnel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/funnel.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/funnel.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/heatmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/heatmap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/heatmap.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/map.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/map.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/dark-blue.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/dark-blue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/dark-green.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/dark-green.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/gray.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/gray.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/grid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/skies.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/highcharts/themes/skies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/jquery-1.10.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/jquery-1.10.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/jquery-1.10.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/jquery-1.10.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/video-js/font/vjs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/font/vjs.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/video-js/video-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/video-js.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/video-js/video-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/video-js.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/video-js/video.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/video.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/video-js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/video-js/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.css" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.flashonly.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.html5only.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.html5only.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.withoutimage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/ueditor.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/ueditor.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/ueditor.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/ueditor.all.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/ueditor.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/ueditor.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/ueditor.parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/ueditor.parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ueditor/ueditor.parse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ueditor/ueditor.parse.min.js" afterDir="false" />
-    </list>
+    <list default="true" id="0e6c3626-7a97-4fbb-8e89-60e4a317506d" name="默认的" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +71,7 @@
       <file leaf-file-name="FileUpload.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/FileUpload.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="115">
               <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
             </state>
           </provider>
@@ -496,12 +400,12 @@
       <workItem from="1533041426508" duration="17000" />
       <workItem from="1533041444926" duration="26000" />
       <workItem from="1533041471711" duration="2595000" />
-      <workItem from="1533082035051" duration="4080000" />
+      <workItem from="1533082035051" duration="4085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322648000" />
+    <option name="totallyTimeSpent" value="322653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
@@ -818,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/upfile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -842,9 +739,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/FileUpload.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="115">
           <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
         </state>
       </provider>
