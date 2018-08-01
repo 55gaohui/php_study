@@ -7,6 +7,7 @@
  */
 //上传文件类
 class FileUpload{
+<<<<<<< HEAD
     private $error;     //错误代码
     private $maxsize;   //表单最大值
     private $type;      //类型
@@ -49,6 +50,12 @@ class FileUpload{
         if(!in_array($this->type,$this->typeArr)){
             Tool::alertBack('警告：不合法的上传类型！');
         }
+=======
+    private $error;
+    //构造方法，初始化
+    public function __construct($_file){
+        $this->error = $_FILES[$_file]['error'];
+>>>>>>> 65c2f3ed76004ce22453a8a5e7d9181f81e799e2
     }
     //验证错误
     private function checkError(){
@@ -58,7 +65,11 @@ class FileUpload{
                     Tool::alertBack('警告：上传值超过了约定最大值！');
                     break;
                 case 2 :
+<<<<<<< HEAD
                     Tool::alertBack('警告：上传值超过了'.$this->maxsize.'KB！');
+=======
+                    Tool::alertBack('警告：上传值超过了200KB！');
+>>>>>>> 65c2f3ed76004ce22453a8a5e7d9181f81e799e2
                     break;
                 case 3 :
                     Tool::alertBack('警告：只有部分文件被上传！');
