@@ -14,22 +14,49 @@ class FileUpload{
     private $path;      //主目录路径
     private $today;     //今天的目录
     private $name;      //文件名
-
+    private $tmp;       //临时文件
+    private $linkpath;  //链接路径
+    private $linktoday; //今天目录（相对）
     //构造方法，初始化
     public function __construct($_file,$_maxsize){
         $this->error = $_FILES[$_file]['error'];
         $this->maxsize = $_maxsize/1024;
         $this->type = $_FILES[$_file]['type'];
         $this->path = ROOT_PATH.UPDIR;
-        $this->today =$this->path.'image/'.date('Ymd').'/';
+        $this->linktoday = date('Ymd').'/';
+        $this->today =$this->path.'image/'.$this->linktoday;
         $this->name = $_FILES[$_file]['name'];
+        $this->tmp = $_FILES[$_file]['tmp_name'];
         $this->checkError();
         $this->checkType();
         $this->checkPath();
+        $this->moveUpload();
+    }
+    //返回路径
+    public function getPath(){
+        $_path = $_SERVER['SCRIPT_NAME'];
+        $_dir = dirname(dirname($_path));
+        if($_dir == '\\') $_dir='/';
+        $this->linkpath = $_dir.$this->linkpath;
+        return $this->linkpath;
+    }
+    //移动文件
+    private function moveUpload(){
+        if(is_uploaded_file($this->tmp)){
+            if(!move_uploaded_file($this->tmp,$this->setNewName())){
+                Tool::alertBack('警告：上传失败！');
+            }
+        }else{
+            Tool::alertBack('警告：临时文件不存在！');
+        }
     }
     //设置新文件名
     private function setNewName(){
-
+        $_nameArr = explode('.',$this->name);
+            $_postfix = $_nameArr[count($_nameArr)-1];
+            $_newname = date('YmdHis').mt_rand(100,1000).'.'.$_postfix;
+            $this->linkpath = UPDIR.$this->linktoday.$_newname;
+            return $this->today.$_newname;
     }
     //验证目录
     private function checkPath(){
