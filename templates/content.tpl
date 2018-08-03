@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2018-05-08
- * Time: 8:40
- */
-?>
 <!DOCTYPE html
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -36,7 +28,7 @@
         {/if}
     </ol>
     {if $add}
-        <form action="" method="post">
+        <form action="../config/ueditor.php?action=upload" method="post" name="content">
             <table cellspacing="0" class="content">
                 <tr><th><strong>发布一条新文档</strong></th></tr>
                 <tr><td>文档标题：<input type="text" name="title" class="text" /></td></tr>
@@ -54,7 +46,7 @@
                 </td></tr>
                 <tr><td>TAG标签：<input type="text" name="tag" class="text" /></td></tr>
                 <tr><td>关&nbsp;&nbsp;键&nbsp;字：<input type="text" name="keyword" class="text" /></td></tr>
-                <tr><td>缩&nbsp;&nbsp;略&nbsp;图：<input type="text" name="thumbnail" class="text" /><input type="button" value="上传缩略图" onclick="centerWindow('../templates/upfile.html','upfile','400','100')"></td></tr>
+                <tr><td>缩&nbsp;&nbsp;略&nbsp;图：<input type="text" name="thumbnail" class="text" readonly/><input type="button" value="上传缩略图" onclick="centerWindow('../templates/upfile.html','upfile','400','100')"></td></tr>
                 <tr><td>文章来源：<input type="text" name="source" class="text" /></td></tr>
                 <tr><td>作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<input type="text" name="author" class="text" /></td></tr>
                 <tr><td><span class="middle">内容摘要：</span><textarea name="info"></textarea></td></tr>
@@ -88,7 +80,7 @@
                             <option value="" style="color: orange">橙色</option>
                         </select>
                  </td></tr>
-                <tr><td><input type="submit" value="发布文档" /><input type="reset" value="重置" /></td></tr>
+                <tr><td><input type="submit" name="upload" value="发布文档" /><input type="reset" value="重置" /></td></tr>
             </table>
         </form>
     {/if}
