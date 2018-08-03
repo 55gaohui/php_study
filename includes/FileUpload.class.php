@@ -23,8 +23,8 @@ class FileUpload{
         $this->maxsize = $_maxsize/1024;
         $this->type = $_FILES[$_file]['type'];
         $this->path = ROOT_PATH.UPDIR;
-        $this->linktoday = date('Ymd').'/';
-        $this->today =$this->path.'image/'.$this->linktoday;
+        $this->linktoday = 'image/'.date('Ymd').'/';
+        $this->today =$this->path.$this->linktoday;
         $this->name = $_FILES[$_file]['name'];
         $this->tmp = $_FILES[$_file]['tmp_name'];
         $this->checkError();
