@@ -23,6 +23,7 @@ class NavModel extends Model {
     }
     //导航排序
     public function setNavSort(){
+        $_sql = null;
         foreach ($this->_sort as $_key=>$_value){
             if(!is_numeric($_value)) continue;
             $_sql  .= "UPDATE cms_nav SET sort='$_value' WHERE id='$_key';";
@@ -74,7 +75,7 @@ class NavModel extends Model {
         $_sql = "SELECT COUNT(*) FROM cms_nav WHERE pid=0";
         return parent::total($_sql);
     }
-    //查询所有等级带limit
+    //查询所有主导航带limit
     public function getAllNav(){
         //获取结果集
         $_sql="SELECT 
@@ -91,12 +92,28 @@ class NavModel extends Model {
                    $this->_limit";
         return parent::all($_sql);
     }
+    //查询所有主导航不带limit
+    public function getAllFrontNav(){
+        //获取结果集
+        $_sql="SELECT 
+                        id,
+                        nav_name,
+                        nav_info,
+                        sort
+                   FROM 
+                        cms_nav
+                  WHERE
+                        pid=0 
+                  ORDER BY
+                         sort ASC";
+        return parent::all($_sql);
+    }
     //获取子导航总记录
     public function getChildNavTotal(){
         $_sql = "SELECT COUNT(*) FROM cms_nav WHERE pid='$this->_pid'";
         return parent::total($_sql);
     }
-    //查询子导航
+    //查询子导航，带limit
     public function getAllChildNav(){
         //获取结果集
         $_sql="SELECT 

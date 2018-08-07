@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.2
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2018-07-30 08:41:09
--- 服务器版本： 5.7.9
--- PHP Version: 5.6.16
+-- Generation Time: 2018-08-06 13:15:17
+-- 服务器版本： 5.7.14
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -25,16 +25,41 @@ USE `cms`;
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `cms_content`
+--
+
+CREATE TABLE `cms_content` (
+  `id` mediumint(8) UNSIGNED NOT NULL COMMENT '//ID',
+  `title` varchar(50) NOT NULL COMMENT '//标题',
+  `nav` mediumint(8) UNSIGNED NOT NULL COMMENT '//栏目号',
+  `attr` varchar(20) NOT NULL COMMENT '//属性',
+  `tag` varchar(30) NOT NULL COMMENT '//标签',
+  `keyword` varchar(30) NOT NULL COMMENT '//关键字',
+  `thumbnail` varchar(100) NOT NULL COMMENT '//缩略图',
+  `source` varchar(20) NOT NULL COMMENT '//文章来源',
+  `author` varchar(10) NOT NULL COMMENT '//作者',
+  `info` varchar(200) NOT NULL COMMENT '//简介',
+  `content` text NOT NULL COMMENT '//详细内容',
+  `commend` tinyint(1) NOT NULL DEFAULT '1' COMMENT '//是否允许评论',
+  `count` smallint(6) NOT NULL DEFAULT '0' COMMENT '//浏览次数',
+  `gold` smallint(6) NOT NULL DEFAULT '0' COMMENT '//消费金币',
+  `sort` tinyint(1) NOT NULL DEFAULT '0' COMMENT '//排序',
+  `readlimit` tinyint(1) NOT NULL DEFAULT '0' COMMENT '//阅读权限',
+  `color` varchar(10) NOT NULL COMMENT '//颜色',
+  `date` datetime NOT NULL COMMENT '//发布时间'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `cms_level`
 --
 
-DROP TABLE IF EXISTS `cms_level`;
-CREATE TABLE IF NOT EXISTS `cms_level` (
-  `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '//等级编号',
+CREATE TABLE `cms_level` (
+  `id` mediumint(8) UNSIGNED NOT NULL COMMENT '//等级编号',
   `level_name` varchar(20) NOT NULL COMMENT '//等级名称',
-  `level_info` varchar(200) DEFAULT NULL COMMENT '//等级说明',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+  `level_info` varchar(200) DEFAULT NULL COMMENT '//等级说明'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `cms_level`
@@ -54,25 +79,23 @@ INSERT INTO `cms_level` (`id`, `level_name`, `level_info`) VALUES
 -- 表的结构 `cms_manage`
 --
 
-DROP TABLE IF EXISTS `cms_manage`;
-CREATE TABLE IF NOT EXISTS `cms_manage` (
-  `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '//编号',
+CREATE TABLE `cms_manage` (
+  `id` mediumint(8) UNSIGNED NOT NULL COMMENT '//编号',
   `admin_user` varchar(20) NOT NULL COMMENT '//管理员账号',
   `admin_pass` char(40) NOT NULL COMMENT '//管理员密码',
   `level` tinyint(1) UNSIGNED NOT NULL DEFAULT '1' COMMENT '//管理员等级',
   `login_count` smallint(5) NOT NULL DEFAULT '0' COMMENT '//管理员登陆次数',
   `last_ip` varchar(20) NOT NULL DEFAULT '000.000.000.000' COMMENT '//最后登录IP',
   `last_time` datetime DEFAULT NULL COMMENT '//最后登录时间',
-  `reg_time` datetime NOT NULL COMMENT '//注册时间',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+  `reg_time` datetime NOT NULL COMMENT '//注册时间'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `cms_manage`
 --
 
 INSERT INTO `cms_manage` (`id`, `admin_user`, `admin_pass`, `level`, `login_count`, `last_ip`, `last_time`, `reg_time`) VALUES
-(1, 'admin', '7c4a8d09ca3762af61e59520943dc26494f8941b', 1, 4, '::1', '2018-07-30 08:17:14', '2018-05-23 00:00:00'),
+(1, 'admin', '7c4a8d09ca3762af61e59520943dc26494f8941b', 1, 6, '127.0.0.1', '2018-08-06 20:31:39', '2018-05-23 00:00:00'),
 (2, '海关', 'dd5fef9c1c1da1394d6d34b248c51be2ad740840', 3, 0, '000.000.000.000', '2018-05-31 00:00:00', '2018-05-30 00:00:00'),
 (3, '你好', 'dd5fef9c1c1da1394d6d34b248c51be2ad740840', 1, 0, '000.000.000.000', '2018-05-31 00:00:00', '2018-05-25 00:00:00'),
 (6, '的点点滴滴', '7c4a8d09ca3762af61e59520943dc26494f8941b', 6, 0, '000.000.000.000', '2018-06-01 00:00:00', '2018-06-03 00:00:00'),
@@ -86,15 +109,13 @@ INSERT INTO `cms_manage` (`id`, `admin_user`, `admin_pass`, `level`, `login_coun
 -- 表的结构 `cms_nav`
 --
 
-DROP TABLE IF EXISTS `cms_nav`;
-CREATE TABLE IF NOT EXISTS `cms_nav` (
-  `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '//ID',
+CREATE TABLE `cms_nav` (
+  `id` mediumint(8) UNSIGNED NOT NULL COMMENT '//ID',
   `nav_name` varchar(20) NOT NULL COMMENT '//导航名称',
   `nav_info` varchar(200) NOT NULL COMMENT '//导航描述',
   `pid` mediumint(8) UNSIGNED NOT NULL DEFAULT '0' COMMENT '//子分类',
-  `sort` mediumint(8) UNSIGNED NOT NULL COMMENT '//排序',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+  `sort` mediumint(8) UNSIGNED NOT NULL COMMENT '//排序'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `cms_nav`
@@ -116,6 +137,58 @@ INSERT INTO `cms_nav` (`id`, `nav_name`, `nav_info`, `pid`, `sort`) VALUES
 (17, '朝鲜军事', '关于朝鲜军事的动态', 1, 2),
 (18, '越南军事', '关于越南军事的动态\r\n', 1, 3);
 
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `cms_content`
+--
+ALTER TABLE `cms_content`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `cms_level`
+--
+ALTER TABLE `cms_level`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `cms_manage`
+--
+ALTER TABLE `cms_manage`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `cms_nav`
+--
+ALTER TABLE `cms_nav`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- 在导出的表使用AUTO_INCREMENT
+--
+
+--
+-- 使用表AUTO_INCREMENT `cms_content`
+--
+ALTER TABLE `cms_content`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '//ID';
+--
+-- 使用表AUTO_INCREMENT `cms_level`
+--
+ALTER TABLE `cms_level`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '//等级编号', AUTO_INCREMENT=16;
+--
+-- 使用表AUTO_INCREMENT `cms_manage`
+--
+ALTER TABLE `cms_manage`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '//编号', AUTO_INCREMENT=19;
+--
+-- 使用表AUTO_INCREMENT `cms_nav`
+--
+ALTER TABLE `cms_nav`
+  MODIFY `id` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '//ID', AUTO_INCREMENT=19;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

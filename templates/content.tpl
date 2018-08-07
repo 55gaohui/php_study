@@ -28,28 +28,33 @@
         {/if}
     </ol>
     {if $add}
-        <form action="../config/ueditor.php?action=upload" method="post" name="content">
+        <form action="?action=add" method="post" name="content">
             <table cellspacing="0" class="content">
                 <tr><th><strong>发布一条新文档</strong></th></tr>
-                <tr><td>文档标题：<input type="text" name="title" class="text" /></td></tr>
+                <tr><td>文档标题：<input type="text" name="title" class="text" /><span class="red">[必填]</span>( * 标题2-50字之间)</td></tr>
                 <tr>
                     <td>栏&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目：
                         <select name="nav" id="">
                             <option value="">请选择一个栏目类别</option>
+                            {$nav}
                         </select>
+                        <span class="red">[必选]</span>
                     </td>
                 </tr>
-                <tr><td>定义属性：<input type="checkbox" name="top" value="头条"/>头条
-                        <input type="checkbox" name="rec" value="推荐"/>推荐
-                        <input type="checkbox" name="bold" value="加粗"/>加粗
-                        <input type="checkbox" name="skin" value="跳转"/>跳转
+                <tr><td>定义属性：<input type="checkbox" name="attr[]" value="头条"/>头条
+                        <input type="checkbox" name="attr[]" value="推荐"/>推荐
+                        <input type="checkbox" name="attr[]" value="加粗"/>加粗
+                        <input type="checkbox" name="attr[]" value="跳转"/>跳转
                 </td></tr>
-                <tr><td>TAG标签：<input type="text" name="tag" class="text" /></td></tr>
-                <tr><td>关&nbsp;&nbsp;键&nbsp;字：<input type="text" name="keyword" class="text" /></td></tr>
-                <tr><td>缩&nbsp;&nbsp;略&nbsp;图：<input type="text" name="thumbnail" class="text" readonly/><input type="button" value="上传缩略图" onclick="centerWindow('../templates/upfile.html','upfile','400','100')"></td></tr>
-                <tr><td>文章来源：<input type="text" name="source" class="text" /></td></tr>
-                <tr><td>作&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;者：<input type="text" name="author" class="text" /></td></tr>
-                <tr><td><span class="middle">内容摘要：</span><textarea name="info"></textarea></td></tr>
+                <tr><td>TAG标签：<input type="text" name="tag" class="text" />（* 每个标签用','隔开，总长30位之内）</td></tr>
+                <tr><td>关&nbsp;&nbsp;键&nbsp;字：<input type="text" name="keyword" class="text" />（* 每个关键字用','隔开，总长不得大于30位）</td></tr>
+                <tr><td>缩&nbsp;&nbsp;略&nbsp;图：<input type="text" name="thumbnail" class="text" readonly/>
+                                        <input type="button" value="上传缩略图" onclick="centerWindow('../templates/upfile.html','upfile','400','100')">
+                                        <img src="" alt="" name="pic" style="display: none" />（* 必须是jpg,gif,png，并且不得大于1M）
+                </td></tr>
+                <tr><td>文章来源：<input type="text" name="source" class="text" />（* 文章来源不得大于20位）</td></tr>
+                <tr><td>发&nbsp;&nbsp;布&nbsp;者：<input type="text" name="author" class="text" value="{$author}"/>（* 发布者不得大于10位）</td></tr>
+                <tr><td><span class="middle">内容摘要：</span><textarea name="info"></textarea><span class="middle">（* 内容摘要不得大于200位）</span></td></tr>
                 <tr><td>
                         <script id="container" name="content" type="text/plain"></script>
                 </td></tr>
@@ -75,12 +80,12 @@
                         </select>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;标题颜色：<select name="color" id="">
                             <option value="">默认颜色</option>
-                            <option value="" style="color: red">红色</option>
-                            <option value="" style="color: blue">蓝色</option>
-                            <option value="" style="color: orange">橙色</option>
+                            <option value="red" style="color: red">红色</option>
+                            <option value="blue" style="color: blue">蓝色</option>
+                            <option value="orange" style="color: orange">橙色</option>
                         </select>
                  </td></tr>
-                <tr><td><input type="submit" name="upload" value="发布文档" /><input type="reset" value="重置" /></td></tr>
+                <tr><td><input type="submit" name="send" value="发布文档" /><input type="reset" value="重置" /></td></tr>
             </table>
         </form>
     {/if}

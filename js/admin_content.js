@@ -15,3 +15,18 @@ function centerWindow(url,name,width,height) {
     window.open(url,name,'width='+width+',height='+height+',top='+top+',left='+left);
 
 }
+//验证addContent
+function checkAddContent() {
+    var fm=document.content;
+    if(fm.nav_name.value == '' || fm.nav_name.value.length<2 || fm.nav_name.value.length>20){
+        alert('导航名称不得为空或者小于2位大于20位！');
+        fm.nav_name.focus();
+        return false;
+    }
+    if(fm.nav_info.value.length>200){
+        alert('导航描述不得大于200位！');
+        fm.nav_info.focus();
+        return false;
+    }
+    return true;
+}

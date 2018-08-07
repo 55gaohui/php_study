@@ -10,6 +10,8 @@ if(isset($_POST['send'])){
     $_fileupload = new FileUpload('pic',$_POST['MAX_FILE_SIZE']);
     $_path = $_fileupload->getPath();
     $_img = new Image($_path);
+    //$_img->thumb(50);       // 1-100
+    $_img->thumb3(200,150);
     $_img->out();
     Tool::alertOpenerClose('缩略图上传成功！',$_path);
 }else{
