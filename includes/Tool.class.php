@@ -26,6 +26,32 @@ class Tool{
         echo "<script type='text/javascript'>window.close();</script>";
         exit();
     }
+    //将html字符串转换成html标签
+    static public function unHtml($_str){
+        return htmlspecialchars_decode($_str);
+    }
+    //将对象数组转换成字符串，并且去掉最后的逗号
+    static public function objArrStr($_object,$_field){
+        if($_object){
+            $_html = null;
+            foreach ($_object as $value){
+                $_html .= $value->$_field.',';
+            }
+        }
+        return substr($_html,0,strlen($_html)-1);
+
+    }
+    //字符串截取
+    static public function subStr($_object,$_field,$_length,$_encoding){
+        if($_object){
+            foreach ($_object as $_value) {
+                if(mb_strlen($_value->$_field,$_encoding) >$_length ){
+                    $_value->$_field = mb_substr($_value->$_field,0,$_length,$_encoding).'...';
+                }
+            }
+        }
+        return $_object;
+    }
     //弹窗返回
     static public function alertBack($_info){
         echo "<script type='text/javascript'>alert('$_info');history.back();</script>";

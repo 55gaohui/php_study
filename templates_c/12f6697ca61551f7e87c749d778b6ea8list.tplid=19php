@@ -17,34 +17,34 @@
     <link rel="stylesheet" type="text/css" href="style/list.css">
 </head>
     <body>
-    {include file="header.tpl"}
+    <?php  $_tpl->create('header.tpl')?>
         <div id="list">
-            <h2>当前位置 &gt; {$nav}</h2>
-            {if $AllListContent}
-                {foreach $AllListContent(key,value)}
+            <h2>当前位置 &gt; <?php echo $this->_vars['nav'];?></h2>
+            <?php if(@$this->_vars['AllListContent']) {?>
+                <?php foreach ($this->_vars['AllListContent'] as $key=>$value){ ?>
                 <dl>
-                    <dt><a href="details.php?id={@value->id}" target="_blank"><img src="{@value->thumbnail}" alt="{@value->title}"></a></dt>
-                    <dd>[<strong>{@value->nav_name}</strong>] <a href="details.php?id={@value->id}" target="_blank">{@value->title}</a></dd>
-                    <dd>日期：{@value->date} 点击率：{@value->count} 好评：0</dd>
-                    <dd>{@value->info}</dd>
+                    <dt><img src="<?php echo $value->thumbnail?>" alt="<?php echo $value->title?>"></dt>
+                    <dd>[<strong>军事动态</strong>] <a href=""><?php echo $value->title?></a></dd>
+                    <dd>日期：<?php echo $value->date?> 点击率：<?php echo $value->count?> 好评：0</dd>
+                    <dd><?php echo $value->info?></dd>
                 </dl>
-                {/foreach}
-            {else}
+                <?php } ?>
+            <?php }else{ ?>
                 <p class="none">没有任何新闻</p>
-            {/if}
-            <div id="page">{$page}</div>
+            <?php } ?>
+            <div id="page">分页</div>
         </div>
 
     <div id="sidebar">
         <div class="nav">
             <h2>子栏目列表</h2>
-            {if $childnav}
-                {foreach $childnav(key,value)}
-                    <strong><a href="list.php?id={@value->id}">{@value->nav_name}</a></strong>
-                {/foreach}
-            {else}
+            <?php if(@$this->_vars['childnav']) {?>
+                <?php foreach ($this->_vars['childnav'] as $key=>$value){ ?>
+                    <strong><a href="list.php?id=<?php echo $value->id?>"><?php echo $value->nav_name?></a></strong>
+                <?php } ?>
+            <?php }else{ ?>
                 <span>该栏目没有子类</span>
-            {/if}
+            <?php } ?>
         </div>
         <div class="right">
             <h2>本类推荐</h2>
@@ -83,6 +83,6 @@
             </ul>
         </div>
     </div>
-    {include file='footer.tpl'}
+    <?php  $_tpl->create('footer.tpl')?>
     </body>
 </html>

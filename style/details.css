@@ -1,54 +1,40 @@
 @charset "utf-8";
-#list{
+#details{
     width: 690px;
     min-height: 600px;
     float: left;
     margin: 0 0 10px 0;
 }
-#list h2{
+#details h2{
     border: 1px solid #ccc;
 }
-#list h2 a{
+#details h2 a{
     color: #360;
     text-decoration: none;
 }
-#list h2 a:hover{
+#details h2 a:hover{
     color: #f60;
 }
-#list dl{
-    height: 110px;
-    margin: 10px 0;
-    border-bottom: 1px dashed #ccc;
-}
-#list dl dt{
-    width: 150px;
-    height: 100px;
-    float: left;
-}
-#list dl dt img{
-    display: block;
-    border: 1px solid #ccc;
-}
-#list p.none{
-    padding: 20px;
+#details h3{
+    font-size: 22px;
     text-align: center;
-    border-bottom: 1px dashed #ccc;
+    color: #333;
+    padding: 20px 0 0 0;
 }
-#list dl dd{
-    float: left;
-    width: 530px;
-    margin: 0 0 0 10px;
-    padding: 0 0 5px 0;
+#details div.d1{
+    text-align: center;
+    padding: 10px;
+}
+#details div.d2{
+    padding: 10px;
+    margin: 10px;
+    background: #ffffee;
+    border: 1px solid #ccc;
     line-height: 150%;
 }
-#list dl dd a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #369;
-    font-size: 14px;
-}
-#list dl dd a:hover{
-    color: #f60;
+#details div.d3{
+    padding: 20px 10px;
+    line-height: 250%;
 }
 #sidebar{
     width: 260px;

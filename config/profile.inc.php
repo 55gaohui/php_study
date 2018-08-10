@@ -12,6 +12,7 @@ define('DB_PASS','');                   //密码
 define('DB_NAME','cms');                //数据库名
 //系统配置文件
 define('PAGE_SIZE',5);                  //每页多少条
+define('ARTICLE_SIZE',8);                  //文章页每页多少条
 define('PREV_URL',@$_SERVER['HTTP_REFERER']); //上一页地址
 define('NAV_SIZE',10);                  //主导航在前台显示个数
 define('UPDIR','/upload/');             //上传主目录

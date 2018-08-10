@@ -1,5 +1,4 @@
 <div id="top">
-    {$title}
     <a href="">这里可以放置文字广告1</a>
     <a href="">这里可以放置文字广告2</a>
 </div>

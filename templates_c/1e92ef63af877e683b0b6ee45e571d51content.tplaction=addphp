@@ -12,9 +12,6 @@
     <!-- 编辑器源码文件 -->
     <script type="text/javascript" src="../ueditor/ueditor.all.js"></script>
     <script type="text/javascript" charset="utf-8" src="../ueditor/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript">
-        var ue = UE.getEditor('container');
-    </script>
 </head>
 <body id="main">
     <div class="map">
@@ -85,7 +82,7 @@
                             <option value="orange" style="color: orange">橙色</option>
                         </select>
                  </td></tr>
-                <tr><td><input type="submit" name="send" value="发布文档" /><input type="reset" value="重置" /></td></tr>
+                <tr><td><input type="submit" name="send" onclick="return checkAddContent();" value="发布文档" /><input type="reset" value="重置" /></td></tr>
             </table>
         </form>
     <?php } ?>

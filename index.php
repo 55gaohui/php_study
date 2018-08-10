@@ -7,6 +7,5 @@
  */
     require __DIR__.'/init.inc.php';
     global $_tpl;
-    $_tpl->assign('title','标头');
     $_tpl->display('index.tpl');
 ?>
